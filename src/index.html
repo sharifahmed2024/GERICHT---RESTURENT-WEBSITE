@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- google fonts here -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<!-- font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- css links here -->
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#040404]">
+<!-- Navbar part goes here -->
+ <nav class="py-8">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="">
+      </a>
+    </div>
+    <div class="menu">
+      <ul class="flex gap-x-8">
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="index.html">Home</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="coming-soon.html">Pages</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="contact.html">Contact us</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="blog.html">Blog</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="faq.html">Landing</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="team.html">Team</a></li>
+        <li><a class="text-base leading-[170%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="team-detalis.html">Team details</a></li>
+      </ul>
+    </div>
+    <div class="button">
+      <ul class="flex gap-x-12 items-center">
+        <li><a class="text-base leading-[175%] tracking-[0.8px] hover:text-[#DCCA87] transition-all" href="404.html">Log In / Registration</a></li>
+        <li><img src="images/nav-line.png" alt=""></li>
+        <li><a class="text-base leading-[175%] tracking-[0.64px] hover:text-[#DCCA87] transition-all" href="coming-soon.html">Book Table</a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+
+<!-- Banner part goes here -->
+  <section id="banner" class="pt-12 pb-36 px-0">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+      <div class="left">
+        <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Chase the new Flavour</h4>
+        <div class="icon my-2">
+          <img src="images/banner-left-icon.png" alt="">
+        </div>
+        <h1 class="max-w-[453px] text-[90px] font-bold leading-[130%] tracking-[3.6px] text-[#DCCA87]">The key to Fine dining</h1>
+        <p class="max-w-[453px] text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] my-8">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+        <div class="left-btn">
+          <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="service.html">Explore Menu</a></button>
+        </div>
+      </div>
+      <div class="right w-[40%] flex justify-between items-center relative before:absolute before:content-[''] before:left-[-5%] before:bottom-[-5%] before:w-1/2 before:h-1/2 before:bg-[#DCCA87] before:z-[-99] after:absolute after:content-[''] after:right-[-5%] after:top-[-5%] after:w-1/2 after:h-1/2 after:bg-[#DCCA87] after:z-[-99]">
+          <div class="item">
+            <img src="images/banner1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/banner2.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="images/banner3.jpg" alt="">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="bg-[url(images/line.png)] bg-auto bg-center bg-no-repeat">
+<!-- About part goes here -->
+<section class="about bg-[url(images/about-bg.jpg)] bg-cover bg-center bg-no-repeat py-[480px] mt-[152px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(4,4,4,0.5)] after:z-[1]">
+    <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-[url(images/G.png)] bg-center bg-no-repeat mx-auto flex gap-x-[85px] justify-center items-center">
+      <div class="about1 text-right">
+        <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87]">About Us</h1>
+        <div class="img mt-2 flex justify-end">
+          <img src="images/about-icon.png" alt="">
+        </div>
+        <p class="max-w-[536px] text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+          <div class="left-btn">
+            <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="about.html">Know More</a></button>
+          </div>
+      </div>
+      <div class="about2">
+        <img src="images/about.png" alt="">
+      </div>
+      <div class="about3">
+        <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87]">Our History</h1>
+        <div class="img mt-2">
+          <img src="images/banner-left-icon.png" alt="">
+        </div>
+        <p class="max-w-[536px] text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] my-8">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+          <div class="left-btn">
+            <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="about.html">Know More</a></button>
+          </div>
+      </div>
+    </div>
+</section>
+
+
+<!--Table book part goes here  -->
+<section class="table-booking my-[152px]">
+  <div class="container relative drop-shadow-2xl mx-auto bg-[#0C0C0C] py-12 px-8 border border-solid border-[rgba(220,202,135,0.2)] text-center">
+    <img class="absolute top-[-35%] right-[-10%] animate-[spin_4s_linear_infinite]" src="images/animate.png" alt="">
+    <h3 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Reservations</h3>
+    <div class="icon flex justify-center my-2">
+      <img src="images/banner-left-icon.png" alt="">
+    </div>
+    <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87] mb-16">Book A Table</h1>
+    <form class="flex justify-between mb-16" action="">
+      <select class="bg-transparent border border-solid border-[#F5EFDB] w-[30%] p-4 font-semibold text-[#aaaaaa] text-lg leading-[175%] tracking-[0.64px]" name="persons" id="persons">
+        <option class="bg-slate-500 py-1" value="1 person">1 person</option>
+        <option class="bg-slate-500 py-1" value="2 person">2 person</option>
+        <option class="bg-slate-500 py-1" value="3 person">3 person</option>
+        <option class="bg-slate-500 py-1" value="4 person">4 person</option>
+      </select>
+      <select class="bg-transparent border border-solid border-[#F5EFDB] w-[30%] p-4 font-semibold text-[#aaaaaa] text-lg leading-[175%] tracking-[0.64px]" name="date" id="date">
+        <option class="bg-slate-500 py-1" value="12/05/2021">12/05/2021</option>
+        <option class="bg-slate-500 py-1" value="13/05/2021">13/05/2021</option>
+        <option class="bg-slate-500 py-1" value="14/05/2021">14/05/2021</option>
+        <option class="bg-slate-500 py-1" value="15/05/2021">15/05/2021</option>
+
+      </select>
+      <select class="bg-transparent border border-solid border-[#F5EFDB] w-[30%] p-4 font-semibold text-[#aaaaaa] text-lg leading-[175%] tracking-[0.64px]" name="persons" id="persons">
+        <option class="bg-slate-500 py-1" value="11:00 AM">11:00 AM</option>
+        <option class="bg-slate-500 py-1" value="12:00 PM">12:00 PM</option>
+        <option class="bg-slate-500 py-1" value="01:00 PM">01:00 PM</option>
+        <option class="bg-slate-500 py-1" value="02:00 PM">02:00 PM</option>
+      </select>
+    </form>
+    <div class="btn">
+      <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all">Book Now</button>
+    </div>
+  </div>
+</section>
+
+
+<!--Menu part goes here  -->
+<section class="menu pb-[262px] relative overflow-hidden">
+  <div class="slider-main relative before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.4)] before:z-[1]">
+    <div class="item">
+      <img src="images/menu-1.jpg" alt="" width="100%">
+    </div>
+    <div class="item">
+      <img src="images/menu-2.png" alt="" width="100%">
+    </div>
+    <div class="item">
+      <img src="images/menu-3.png" alt="" width="100%">
+    </div>
+  </div>
+  <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-[2]">
+    <img class="absolute top-[-262px] left-0 z-[99] animate-[spin_4s_linear_infinite]" src="images/animate.png" alt="">
+    <ul class="flex flex-col gap-y-16">
+      <li><button class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-white relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all"><a class="font-head" href="service.html">Bar Menu</a></button></li>
+      <li><button class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-white relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all"><a class="font-head" href="service.html">Food Menu</a></button></li>
+      <li><button class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-white relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all"><a class="font-head" href="service.html">Desserts Menu</a></button></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Special part goes here -->
+ <section class="special pb-[152px]">
+  <div class="container mx-auto flex flex-col justify-center items-center">
+    <div class="head text-center">
+      <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Menu that fits you palatte</h4>
+      <div class="icon flex justify-center">
+        <img class="my-2" src="images/banner-left-icon.png" alt="">
+      </div>
+      <h1 class="font-semibold text-[64px] leading-[130%] tracking-[2.56px] text-[#DCCA87] mb-16">Today’s Special</h1>
+    </div>
+    <div class="main flex gap-x-8 my-16 items-center">
+      <div class="item1">
+        <h2 class="text-[45px] font-semibold leading-[130%] tracking-[1.8px] mb-12 text-center">Wine & Beer</h2>
+        <div class="main-part flex flex-col gap-y-[40px]">
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Chapel Hill Shiraz</h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[106px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$56</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">AU | Bottle</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Catena Malbec</h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$59</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">AR | Bottle</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">La Vieille Rosé</h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$44</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">FR | 750 ml</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Rhino Pale Ale</h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$31</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">CA | 750 ml</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Irish Guinness
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$26</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">IE | 750 ml</p>
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="images/speical.png" alt="">
+      </div>
+      <div class="item3">
+        <h2 class="text-[45px] font-semibold leading-[130%] tracking-[1.8px] mb-12 text-center">Cocktails</h2>
+        <div class="main-part flex flex-col gap-y-[40px]">
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Aperol Spritz
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$20</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Dark 'N' Stormy
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$16</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">Dark rum | Ginger beer | Slice of lime. </p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Daiquiri
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$10</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">Rum | Citrus juice | Sugar</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Old Fashioned
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$31</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">Bourbon | Brown sugar | Angostura Bitters</p>
+          </div>
+          <div class="parts">
+            <div class="part1 flex justify-between items-center">
+              <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Negroni
+              </h2>
+              <div class="line-price flex gap-x-8 items-center">
+                <div class="line h-[1px] w-[119px] bg-[#fafafa]"></div>
+                <h2 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">$26</h2>
+              </div>
+            </div>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa] mt-2">Gin | Sweet Vermouth | Campari | Orange garnish</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="coming-soon.html">View More</a></button>
+    </div>
+  </div>
+ </section>
+
+
+<!-- Teams part goes here  -->
+<section id="teams" class=" bg-[url(images/about-bg.jpg)] bg-cover bg-center bg-no-repeat py-[523px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(4,4,4,0.5)] after:z-[1]">
+  <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10 mx-auto flex justify-around items-center flex-wrap flex-row-reverse">
+    <img class="absolute bottom-[-28%] right-0 animate-[spin_4s_linear_infinite]" src="images/animate.png" alt="">
+    <div class="left">
+      <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Chef’s Word</h4>
+      <div class="icon my-2">
+        <img src="images/banner-left-icon.png" alt="">
+      </div>
+      <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87]">What we believe in</h1>
+      <p class="max-w-[453px] text-[16px] leading-[175%] tracking-[0.64px] italic text-[#aaaaaa] my-16"><span>
+        <img src="images/invited.png" alt="">      
+      </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+      <div class="identity flex flex-col gap-y-2">
+        <h3 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87]">Kevin Luo</h3>
+        <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#aaaaaa]">Chef & Founder</p>
+      </div>
+      <h4 class="font-sign text-[64px] leading-[130%] tracking-[2.56px] text-[#AAAAAA] mt-16">Kevin Luo</h4>
+
+    </div>
+    <div class="right w-[40%] z-[10] flex justify-between items-center relative before:absolute before:content-[''] before:left-[-5%] before:bottom-[-5%] before:w-1/2 before:h-1/2 before:bg-[#DCCA87] before:z-[-1] after:absolute after:content-[''] after:right-[-2%] after:top-[-5%] after:w-1/2 after:h-1/2 after:bg-[#DCCA87] after:z-[-1]">
+        <div class="item">
+          <img src="images/believe1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="images/believe2.png" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Customer part goes here -->
+ <section class="customer pt-[152px]">
+  <div class="container mx-auto">
+    <div class="head text-center">
+      <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Testimony</h4>
+      <div class="icon flex justify-center">
+        <img class="my-2" src="images/banner-left-icon.png" alt="">
+      </div>
+      <h1 class="font-semibold text-[64px] leading-[130%] tracking-[2.56px] text-[#DCCA87] mb-16">Happy customers</h1>
+    </div>
+    <div class="main flex gap-x-8 justify-center items-center">
+      <div class="box-1 flex flex-col gap-y-16">
+        <div class="item1 flex gap-x-8 items-center">
+          <div class="img relative">
+            <img src="images/customer1.png" alt="">
+            <img class="absolute bottom-[-8%] right-[-8%]" src="images/invited.png" alt="">
+          </div>
+          <div class="text">
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] italic text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+            <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87] mt-4 mb-1">Wade Warren</h1>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#F5EFDB]">Sommelier</p>
+          </div>
+        </div>
+        <div class="item2 flex gap-x-8 items-center">
+          <div class="img relative">
+            <img src="images/customer2.png" alt="">
+            <img class="absolute bottom-[-8%] right-[-8%]" src="images/invited.png" alt="">
+          </div>
+          <div class="text">
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] italic text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+            <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87] mt-4 mb-1">Robert Fox</h1>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#F5EFDB]">Chef</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-2 flex flex-col gap-y-16">
+        <div class="item1 flex gap-x-8 items-center">
+          <div class="img relative">
+            <img src="images/customer3.png" alt="">
+            <img class="absolute bottom-[-8%] right-[-8%]" src="images/invited.png" alt="">
+          </div>
+          <div class="text">
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] italic text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+            <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87] mt-4 mb-1">Jane Cooper</h1>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#F5EFDB]">Chef</p>
+          </div>
+        </div>
+        <div class="item2 flex gap-x-8 items-center">
+          <div class="img relative">
+            <img src="images/customer4.png" alt="">
+            <img class="absolute bottom-[-8%] right-[-8%]" src="images/invited.png" alt="">
+          </div>
+          <div class="text">
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] italic text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+            <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87] mt-4 mb-1">Brooklyn Simmons</h1>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#F5EFDB]">Caterer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+<!-- Video part goes here -->
+<section class="Video mt-[152px] bg-[url(images/video.png)] bg-cover bg-center bg-no-repeat h-[756px] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(12,12,12,0.59)]">
+  <div class="container flex justify-center items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10">
+    <img class="absolute top-[-70%] left-[-5%] animate-[spin_4s_linear_infinite]" src="images/animate.png" alt="">
+    <button class="border border-solid w-32 h-32 border-[#DCCA87] rounded-[50%] hover:border-transparent hover:bg-[#DCCA87] transition-all">
+      <a href="https://www.youtube.com/watch?v=5ZQlvQI7PGc&list=RDtcHJodG5hX8&index=11" target="_blank"><i class="fa-solid fa-play text-3xl"></i></a>
+    </button>
+  </div>
+</section>
+
+
+<!-- Award part goes here -->
+ <section class="Award py-[474px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(4,4,4,0.5)] after:z-[1] bg-[url(images/about-bg.jpg)] bg-cover bg-center bg-no-repeat">
+  <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10 mx-auto flex justify-center items-center">
+    <div class="award-left w-2/3 flex justify-center">
+      <div class="warp">
+        <div class="head mb-16">
+          <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Awards & recognition</h4>
+        <div class="icon my-2">
+          <img src="images/banner-left-icon.png" alt="">
+        </div>
+        <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87]">Our Laurels</h1>
+        </div>
+        <div class="main flex flex-col gap-y-16">
+          <div class="item flex gap-x-8 items-center">
+            <div class="item1 flex gap-x-8 items-center">
+              <img src="images/award-icon2.png" alt="">
+              <div class="text">
+                <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Bib Gourmond</h4>
+                <p class="max-w-[190px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] mt-2">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="item2 flex gap-x-8 items-center">
+              <img src="images/award-icon1.png" alt="">
+              <div class="text">
+                <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Rising Star</h4>
+                <p class="max-w-[190px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] mt-2">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item flex gap-x-8 items-center">
+            <div class="item1 flex gap-x-8 items-center">
+              <img src="images/award-icon3.png" alt="">
+              <div class="text">
+                <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">AA Hospitality </h4>
+                <p class="max-w-[190px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] mt-2">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="item2 flex gap-x-8 items-center">
+              <img src="images/award-icon4.png" alt="">
+              <div class="text">
+                <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px] text-[#DCCA87]">Outstanding Chef</h4>
+                <p class="max-w-[190px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] mt-2">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="award-right w-1/3 relative">
+      <img class="absolute -left-12 bottom-0 z-[10]" src="images/white-G.png" alt="">
+      <div class="award-slider">
+        <div class="item">
+          <img src="images/award1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="images/award2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+<!-- Blog part goes here -->
+ <section class="Blog pt-[152px]">
+  <div class="container relative mx-auto">
+    <div class="head text-center">
+      <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Blogs</h4>
+      <div class="icon flex justify-center">
+        <img class="my-2" src="images/banner-left-icon.png" alt="">
+      </div>
+      <h1 class="font-semibold text-[64px] leading-[130%] tracking-[2.56px] text-[#DCCA87] mb-16">Gerícht updates</h1>
+    </div>
+    <div class="main flex gap-x-8 justify-center items-center mb-16">
+      <div class="item">
+        <div class="img">
+          <img src="images/blog1.png" alt="">
+        </div>
+        <div class="text mt-6 flex flex-col gap-y-8">
+          <div class="sub_head flex justify-between">
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">16 Apr 2021</p>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">- Annalisa L</p>
+          </div>
+            <h1 class="max-w-[412px] text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87]">tips for prepping and caring for your grill</h1>
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <div class="btn">
+              <button class="text-[16px] leading-[175%] tracking-[0.64px] text-[#DCCA87] relative after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#DCCA87] hover:after:w-full after:transition-all"><a class="font-head" href="blog-details.html">Read More</a>
+              </button>
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="images/blog2.png" alt="">
+        </div>
+        <div class="text mt-6 flex flex-col gap-y-8">
+          <div class="sub_head flex justify-between">
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">23 May 2021</p>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">-John Micheal</p>
+          </div>
+            <h1 class="max-w-[412px] text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87]">summer cocktails and mocktails</h1>
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <div class="btn">
+              <button class="text-[16px] leading-[175%] tracking-[0.64px] text-[#DCCA87] relative after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#DCCA87] hover:after:w-full after:transition-all"><a class="font-head" href="blog-details.html">Read More</a></button>
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="images/blog3.png" alt="">
+        </div>
+        <div class="text mt-6 flex flex-col gap-y-8">
+          <div class="sub_head flex justify-between">
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">06 Aug 2021</p>
+            <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#FAFAFA]">-Fred W</p>
+          </div>
+            <h1 class="max-w-[412px] text-[32px] leading-[130%] tracking-[1.28px] text-[#DCCA87]">easy cooking for college students</h1>
+            <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <div class="btn">
+              <button class="text-[16px] leading-[175%] tracking-[0.64px] text-[#DCCA87] relative after:absolute after:content-[''] after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-[#DCCA87] hover:after:w-full after:transition-all"><a class="font-head" href="blog-details.html">Read More</a></button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn text-center">
+      <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="blog.html">View More</a>
+      </button>
+    </div>
+    <img class="absolute animate-[spin_4s_linear_infinite] bottom-[-5%] right-[-10%]" src="images/animate.png" alt="">
+  </div>
+ </section>
+
+
+ <!-- Gallery part goes here -->
+ <section class="Gallery mt-[152px] py-[353px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(4,4,4,0.5)] after:z-[1] bg-[url(images/about-bg.jpg)] bg-cover bg-center bg-no-repeat">
+  <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10 flex justify-between items-center">
+    <div class="left_part">
+      <h4 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Instagram</h4>
+    <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87] my-2">Photo Gallery</h1>
+    <div class="icon">
+      <img src="images/banner-left-icon.png" alt="">
+    </div>
+    <p class="max-w-[412px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+    <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all"><a class="font-head" href="coming-soon.html">View More</a></button>
+    </div>
+    <div class="img-slider w-2/3">
+      <div class="item group border border-solid border-[rgba(220,202,135,0.2)] relative hover:overlay:visible">
+        <img class="" src="images/gal-1.png" alt="">
+        <div class="overlay group-hover:visible transition-all invisible w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.79)] form-[9%] to-[rgba(0,0,0,0.64)] to-[79%] absolute top-0 left-0 flex justify-center items-center">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-[44px]"></i></a>
+        </div>
+      </div>
+      <div class="item group border border-solid border-[rgba(220,202,135,0.2)] relative hover:overlay:visible">
+        <img class="" src="images/gal-2.png" alt="">
+        <div class="overlay group-hover:visible transition-all invisible w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.79)] form-[9%] to-[rgba(0,0,0,0.64)] to-[79%] absolute top-0 left-0 flex justify-center items-center">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-[44px]"></i></a>
+        </div>
+      </div>
+      <div class="item group border border-solid border-[rgba(220,202,135,0.2)] relative hover:overlay:visible">
+        <img class="" src="images/gal-3.png" alt="">
+        <div class="overlay group-hover:visible transition-all invisible w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.79)] form-[9%] to-[rgba(0,0,0,0.64)] to-[79%] absolute top-0 left-0 flex justify-center items-center">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-[44px]"></i></a>
+        </div>
+      </div>
+      <div class="item group border border-solid border-[rgba(220,202,135,0.2)] relative hover:overlay:visible">
+        <img class="" src="images/gal-1.png" alt="">
+        <div class="overlay group-hover:visible transition-all invisible w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.79)] form-[9%] to-[rgba(0,0,0,0.64)] to-[79%] absolute top-0 left-0 flex justify-center items-center">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-[44px]"></i></a>
+        </div>
+      </div>
+    </div>
+    <img class="absolute bottom-[-45%] left-[-13%] animate-[spin_4s_linear_infinite]" src="images/animate.png" alt="">
+  </div>
+ </section>
+
+
+ <!-- footer part goes here -->
+  <footer class="mt-[334px] py-[419px] relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(4,4,4,0.5)] after:z-[1] bg-[url(images/about-bg.jpg)] bg-cover bg-center bg-no-repeat">
+    <div class="container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-10">
+      <div class="main flex justify-between items-center">
+        <div class="item1 flex flex-col items-center">
+          <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#F5EFDB]">Contact Us</h1>
+          <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] mt-6 mb-2">9 W 53rd St, New York, NY 10019, USA</p>
+          <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA]">+1 212-344-1230</p>
+          <p class="text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA]">+1 212-344-1230</p>
+        </div>
+        <div class="item2 flex flex-col items-center">
+          <h1 class="font-bold text-[64px] leading-[130%] tracking-[2.56px] text-[#DCCA87] uppercase mb-8">Gerícht</h1>
+          <p class="max-w-[438px] text-[16px] leading-[175%] tracking-[0.64px] text-center">"The best way to find yourself is to lose yourself in the service of others.”</p>
+          <img class="my-4" src="images/banner-left-icon.png" alt="">
+          <div class="icon flex gap-x-4">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f text-[20px] text-[#F5EFDB] hover:text-[#DCCA87] transition-all"></i></a>
+            <a href="https://x.com/login="><i class="fa-brands fa-twitter text-[20px] text-[#F5EFDB] hover:text-[#DCCA87] transition-all"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-[20px] text-[#F5EFDB] hover:text-[#DCCA87] transition-all"></i></a>
+          </div>
+        </div>
+        <div class="item3 flex flex-col items-center">
+          <h1 class="text-[32px] leading-[130%] tracking-[1.28px] text-[#F5EFDB] mb-6">Working Hours</h1>
+          <p class="max-w-[159px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] text-center mb-2">Monday-Friday:
+            08:00 am -12:00 am</p>
+            <p class="max-w-[158px] text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] text-center">Saturday-Sunday:
+              07:00am -11:00 pm</p>
+        </div>
+      </div>
+      <p class="text-center mt-20 text-[16px] leading-[175%] tracking-[0.64px] text-[#AAAAAA] ml-[4.5rem]">2021 Gerícht. All Rights reserved.</p>
+      <div class="box absolute -top-[16%] left-1/2 -translate-x-1/2 -translate-y-full w-[1300px] drop-shadow-2xl mx-auto bg-[#0C0C0C] py-12 px-8 border border-solid border-[rgba(220,202,135,0.2)] text-center">
+        <div class="head">
+          <h3 class="text-[23px] font-bold leading-[130%] tracking-[0.92px]">Newsletter</h3>
+        <div class="icon flex justify-center my-2">
+          <img src="images/banner-left-icon.png" alt="">
+        </div>
+        <h1 class="font-semibold text-[64px] leading-[130%] tracking-[1.92px] text-[#DCCA87]">Subscribe To Our Newsletter</h1>
+        <p class="text-[16px] leading-[175%] tracking-[0.64px] mt-6 mb-16">And never miss latest Updates!</p>
+        </div>
+        <div class="form flex gap-x-8 justify-center items-center">
+          <input class="bg-transparent border border-solid border-[#F5EFDB] w-[47%] p-4 font-semibold text-[#aaaaaa] text-lg leading-[175%] tracking-[0.64px]" type="email" placeholder="Email Address">
+          <div class="btn">
+            <button class="py-2 px-8 bg-[#DCCA87] font-bold text-[16px] leading-[175%] tracking-[0.64px] text-[#0C0B08] hover:bg-[#ecce62] transition-all">Subscribe</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+ </section>
+
+
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

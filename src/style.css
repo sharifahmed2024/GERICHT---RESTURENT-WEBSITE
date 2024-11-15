@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6,button,option,select,input::placeholder{
+    font-family: "Cormorant Upright", serif;
+}
+p,span,a{
+    font-family: "Open Sans", sans-serif;
+}
